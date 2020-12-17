@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="HR" uuid="1a500ae4-4032-4d5a-9b5d-37904f3a9356">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@54.160.160.130:1521:XE</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Spartan" uuid="541ba5ae-055c-4d14-bdea-13ff6806a017">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@54.160.160.130:1521:XE</jdbc-url>
+    </data-source>
+  </component>
+</project>

@@ -12,10 +12,10 @@ public class Variables {
 
 
     public static void main(String[] args) {
-        // System.out.println(a);
+       // System.out.println(a);
         System.out.println(s);
 
-        //   System.out.println(d);  // static ONLY accepts static
+     //   System.out.println(d);  // static ONLY accepts static
 
         Variables obj = new Variables();
         System.out.println(obj.d);
@@ -31,9 +31,9 @@ public class Variables {
             int b = 20;
         }
 
-        // System.out.println(b);
+      // System.out.println(b);
 
-        //   System.out.println(a);
+     //   System.out.println(a);
 
     }
 
