@@ -31,8 +31,10 @@ public class PatchOneSpartanTest {
 
         // we just want to update the name and phone number
         Map<String,Object> patchBodyMap = new LinkedHashMap<>() ;
-        patchBodyMap.put("name","B2O Voila");
+        patchBodyMap.put("name","Ronaldo");
         patchBodyMap.put("phone",7234561234L);
+
+        System.out.println("patchBodyMap = " + patchBodyMap);
 
         given()
                 .auth().basic("admin","admin")
@@ -57,6 +59,8 @@ public class PatchOneSpartanTest {
         Spartan sp = new Spartan() ; //. "B20 VOILA", "",9876543210L) ;
         sp.setName("B20 VOILA");
         sp.setPhone(9876543210L);
+
+        System.out.println("sp = " + sp);
         // MAP IS A BETTER OPTION WITH MINIMAL EFFORT
         // POJO class need some handling to ignore empty field values
         // when being serialized
@@ -70,7 +74,8 @@ public class PatchOneSpartanTest {
                 .patch("/spartans/{id}").
                 then()
                 .log().all()
-                .statusCode(500) ;
+                .statusCode(500)
+        ;
 
     }
 

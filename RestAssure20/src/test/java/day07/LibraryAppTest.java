@@ -87,8 +87,8 @@ public class LibraryAppTest {
 //        }
         JsonPath jp =  given()
                 .log().all()
-                .header("x-library-token",myToken).
-                        when()
+                .header("x-library-token",myToken)
+                       . when()
                 .get("/dashboard_stats")
                 .jsonPath();
         // Get the response as a map and print it out

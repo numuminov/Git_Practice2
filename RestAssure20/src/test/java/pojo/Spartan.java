@@ -10,7 +10,9 @@ package pojo;
 // public no arg constructor
 // everything else is optional
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 
 public class Spartan {
     private String name;
